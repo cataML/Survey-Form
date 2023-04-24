@@ -8,19 +8,148 @@
     <link rel="stylesheet" href="">
     <style>
       *{
-        padding: 0;
         margin: 0;
+        padding: 0;
         box-sizing: border-box;
       }
-        body{
-            background-color: azure;
-            font-family: 'Times New Roman', Times, serif;
+      body{
+        background-color: lavender;
+        font-family: Georgia, 'Times New Roman', Times, serif;
       }
-       .
-    </style>
+      .header{
+        position: relative;
+        width: 100%;
+        background-color: cyan;
+        padding: 15px;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+
+      }
+      .logo a{
+        color: rgb(24, 10, 10);
+        text-decoration: none;
+        
+       }
+      .menu{
+        list-style: none;
+        display: flex;
+      }
+      li a{
+        margin: 0 15px;
+        color: black;
+        text-decoration: none;
+        font-size: 17px;
+      font-weight: bold;
+            }   
+      .active{
+        color: crimson;
+      }
+      li a:hover{
+        color: crimson;
+      }
+       </style>
 </head>
 <body>
+<header class="header">
+  <h3 class="logo"><a href="" class="active">LOGO</a></h3>
+  <ul class="menu">
+    <li><a href="" class="active">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Services</a></li>
+    <li><a href="">Contact</a></li>
+    </ul>
+  </header>
+  <div class="surveyform">
+    <form action="" method="">
+      <h1>CUSTOMER SATISFACTION SURVEY</h1>
+      <div class="form-group">
+        <label for="">How did you hear about our service?</label>
+        <label class="container">Facebook
+          <input type="checkbox" checked="checked" id="">
+          <span class="checkmark"></span>
+          
+        <label class="container">Google Search
+          <input type="checkbox" checked="checked" id="">
+          <span class="checkmark"></span>
+          
+        <label class="container">Google Ad
+          <input type="checkbox" checked="checked" id="">
+          <span class="checkmark"></span>
+          
+        <label class="container">Youtube
+          <input type="checkbox" checked="checked" id="">
+          <span class="checkmark"></span>
+          
+        <label class="container">Refferal
+          <input type="checkbox" checked="checked" id="">
+          <span class="checkmark"></span>
+          
+        <label class="container">Other
+          <input type="checkbox" checked="checked" id="">
+          <span class="checkmark"></span>
+                
+      </div>
+      <div class="form-group">
+        <label for="">How satisfied are you with the quality of services received?</label>
+        <input type="range" name="" id="">
 
+      </div>
+      <div class="form-group">
+        <label for="">How would you  recommend our services to your friends and family?</label>
+        <label class="container">Excellent
+          <input type="radio" name="radio" id="">
+          <span class="checkmark"></span>
+
+          <label class="container">Very Good
+            <input type="radio" name="radio" id="">
+            <span class="checkmark"></span>
+
+            <label class="container">Good
+              <input type="radio" name="radio" id="">
+              <span class="checkmark"></span>
+
+              <label class="container">Poor
+                <input type="radio" name="radio" id="">
+                <span class="checkmark"></span>
+
+                <label class="container">Very Poor
+                  <input type="radio" name="radio" id="">
+                  <span class="checkmark"></span>     
+       
+               <div>
+          <div class="form-group">
+           <label for="">How would you rate the level of customer service you received?</label>
+            <input type="range" name="" id="">
+           </div>
+           <div class="form-group">
+            <label for="">How satisfied are you with the professionalism of our staff members?</label>
+          <label class="container">Very Satisfied
+            <input type="radio" name="radio" id="">
+            <span class="checkmark"></span>
+
+            <label class="container">Satisfied
+              <input type="radio" name="radio" id="">
+              <span class="checkmark"></span>
+
+              <label class="container">Neutral
+                <input type="radio" name="radio" id="">
+                <span class="checkmark"></span>
+
+                <label class="container">Disatisfied
+                  <input type="radio" name="radio" id="">
+                  <span class="checkmark"></span>
+        
+                 <label class="container">Very Disatsfied
+                  <input type="radio" name="radio" id="">
+                  <span class="checkmark"></span>
+    
+             </div>
+      
+
+    </form>
+
+  </div>
 
 </header>
     
