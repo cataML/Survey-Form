@@ -48,6 +48,61 @@
       li a:hover{
         color: crimson;
       }
+      .surveform{
+  margin: auto;  
+  width: 500px;
+  max-width: 90%;
+}
+.surveyform form{
+    width: 100%;
+    height: fit-content;
+    padding: 34px;
+   }
+.surveyform h1{
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    
+}
+.surveyform form-input{
+    margin-left: 70%;
+    width: 100px;
+    height: 100px;
+     color: white;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 20px;
+    box-sizing: border-box;
+ 
+    
+}
+.container{
+  text-align: left;
+  font-size: large;
+  
+}
+.form-group{
+  text-align: justify;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  line-height: 30px;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.button{
+  font-size: 25px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 150px;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+   
+}
+.choose{
+  font-size: large;
+}
        </style>
 </head>
 <body>
@@ -64,39 +119,39 @@
     <form action="" method="">
       <h1>CUSTOMER SATISFACTION SURVEY</h1>
       <div class="form-group">
-        <label for="">How did you hear about our service?</label>
+        <label for="">How did you hear about our service?</label><br>
         <label class="container">Facebook
-          <input type="checkbox" checked="checked" id="">
+          <input type="checkbox" id="">
           <span class="checkmark"></span>
           
         <label class="container">Google Search
-          <input type="checkbox" checked="checked" id="">
+          <input type="checkbox"  id="">
           <span class="checkmark"></span>
           
         <label class="container">Google Ad
-          <input type="checkbox" checked="checked" id="">
+          <input type="checkbox"  id="">
           <span class="checkmark"></span>
           
         <label class="container">Youtube
-          <input type="checkbox" checked="checked" id="">
+          <input type="checkbox"  id="">
           <span class="checkmark"></span>
           
         <label class="container">Refferal
-          <input type="checkbox" checked="checked" id="">
+          <input type="checkbox"  id="">
           <span class="checkmark"></span>
           
         <label class="container">Other
-          <input type="checkbox" checked="checked" id="">
+          <input type="checkbox"  id="">
           <span class="checkmark"></span>
                 
       </div>
       <div class="form-group">
-        <label for="">How satisfied are you with the quality of services received?</label>
-        <input type="range" name="" id="">
+        <label for="">How satisfied are you with the quality of services received?</label><br>
+        <input type="range" class="range" id="">
 
       </div>
       <div class="form-group">
-        <label for="">How would you  recommend our services to your friends and family?</label>
+        <label for="">How would you  recommend our services to your friends and family?</label><br>
         <label class="container">Excellent
           <input type="radio" name="radio" id="">
           <span class="checkmark"></span>
@@ -119,11 +174,11 @@
        
                <div>
           <div class="form-group">
-           <label for="">How would you rate the level of customer service you received?</label>
-            <input type="range" name="" id="">
+           <label for="">How would you rate the level of customer service you received?</label><br>
+            <input type="range" class="range" id="">
            </div>
            <div class="form-group">
-            <label for="">How satisfied are you with the professionalism of our staff members?</label>
+            <label for="">How satisfied are you with the professionalism of our staff members?</label><br>
           <label class="container">Very Satisfied
             <input type="radio" name="radio" id="">
             <span class="checkmark"></span>
@@ -143,9 +198,36 @@
                  <label class="container">Very Disatsfied
                   <input type="radio" name="radio" id="">
                   <span class="checkmark"></span>
-    
+
+                  <div class="form-group">
+                    <label for="">Do you have any suggestion on how we should improve our services?</label><br>
+                   <select name="" id="" class="choose">
+                        <option   value="Yes">Yes</option>
+                        <option value="No">No</option>
+                      </select>
+                    </div>
+             <div class="form-group">
+             <label for="">If yes, in which aspect would want us to improve?</label><br>
+           <input type="text" class="input" id="">
+              </div>
+
+              <div class="form-group">
+                <label for="">Do you have any comments about our service? </label><br>
+              <input type="text" class="input" id="">
+              <style>
+              .input{
+                width: 100%;
+                height: 100px;
+                }
+                .range{
+                  width: 40%;
+                  
+                }
+              
+              </style> 
+                 </div>
              </div>
-      
+      <input type="submit"  class="button" value="Submit">
 
     </form>
 
