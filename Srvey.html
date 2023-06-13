@@ -4,106 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey</title>
-    <link rel="stylesheet" href="">
-    <style>
-   *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-    body{
-        background-color: cornsilk;
-        background-image: radial-gradient(cornsilk,white,pink);
-        background-position: cover;
-        background-size: cover;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-      }
-    .header{
-        position: relative;
-        width: 100%;
-        background-color: cyan;
-        padding: 15px;
-        align-items: center;
-        display: flex;
-        justify-content: space-around;
-
-      }
-   .logo a{
-      margin-left: 0px;
-      border-radius: 30px;
-      
-      width: 10%;
-       }
-    .menu{
-      list-style: none;
-      display: flex;
-      }
-    li a{
-      margin: 0 15px;
-      color: black;
-      text-decoration: none;
-      font-size: 17px;
-      font-weight: bold;
-            }   
-    .active{
-      color: crimson;
-      }
-      li a:hover{
-      color: crimson;
-      }
-    .surveform{
-      margin: auto;  
-      width: 500px;
-      max-width: 90%;
-      }
-    .surveyform form{
-      width: 100%;
-      height: fit-content;
-      padding: 34px;
-     }
-    .surveyform h1{
-      text-align: left;
-      color: black;
-      font-size: 18px;
-     }
-    .surveyform form-input{
-      margin-left: 70%;
-      width: 100px;
-      height: 100px;
-      color: white;
-      font-weight: bold;
-      font-size: large;
-      border-radius: 20px;
-      box-sizing: border-box;
-   
-    }
-  .container{
-      text-align: left;
-      font-size: large;
-   }
-.form-group{
-    text-align: justify;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: large;
-    line-height: 30px;
-    justify-content: space-around;
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-.button{
-    font-size: 25px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    width: 150px;
-    background-color: crimson;
-    color: white;
-    font-weight: bold;
-  }
-.choose{
-   font-size: large;
- }
-       </style>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="header">
@@ -118,7 +20,7 @@
   </header>
   <div class="surveyform">
     <form action="" method="">
-      <h1>CUSTOMER SATISFACTION SURVEY</h1>
+      <h1>Fill this form</h1>
       <div class="form-group">
         <label for="">How did you hear about our service?</label><br>
         <label class="container">Facebook
@@ -143,16 +45,11 @@
           
         <label class="container">Other
         <input type="checkbox"  id="">
-        <span class="checkmark"></span>
-                
-      </div>
+        <span class="checkmark"></span>      
+      </div>    
       <div class="form-group">
-        <label for="">How satisfied are you with the quality of services received?</label><br>
-        <input type="range" class="range" id="">
-
-      </div>
-      <div class="form-group">
-        <label for="">How would you  recommend our services to your friends and family?</label><br>
+        <label for="">How would you  recommend our services to your friends and family?</label>
+        <div>
         <label class="container">Excellent
         <input type="radio" name="radio" id="">
         <span class="checkmark"></span>
@@ -172,14 +69,15 @@
         <label class="container">Very Poor
         <input type="radio" name="radio" id="">
         <span class="checkmark"></span>     
-       
-               <div>
+        </div>
+      <div>
         <div class="form-group">
-        <label for="">How would you rate the level of customer service you received?</label><br>
-        <input type="range" class="range" id="">
-           </div>
+        <label for="">How would you rate the level of customer service you  received?</label><br>
+        <input type="range" name="" id="" class="range">
+      </div>
         <div class="form-group">
         <label for="">How satisfied are you with the professionalism of our staff members?</label><br>
+        <div>
         <label class="container">Very Satisfied
          <input type="radio" name="radio" id="">
          <span class="checkmark"></span>
@@ -199,14 +97,15 @@
         <label class="container">Very Disatsfied
         <input type="radio" name="radio" id="">
         <span class="checkmark"></span>
+        </div>
 
          <div class="form-group">
          <label for="">Do you have any suggestion on how we should improve our services?</label><br>
          <select name="" id="" class="choose">
          <option   value="Yes">Yes</option>
          <option value="No">No</option>
-                      </select>
-                    </div>
+        </select>
+        </div>
          <div class="form-group">
          <label for="">If yes, in which aspect would want us to improve?</label><br>
           <input type="text" class="input" id="">
@@ -225,10 +124,9 @@
                 }
               </style> 
                  </div>
-             </div>
+             </div><br>
       <input type="submit"  class="button" value="Submit">
-
-    </form>
+</form>
 
   </div>
 
