@@ -46,9 +46,8 @@ li a{
   padding: 10px;
   box-shadow: 0 8px 16px black;
   color: black;
-  align-self: left;
+  align-self: centre;
   margin-right: 50px;
-  align-self: end;
   }
 
 .surveyform h1{
@@ -59,6 +58,8 @@ li a{
 .surveyform input{
   width: 100%;
   line-height: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 .form-group{
 margin: 20px;
@@ -80,7 +81,6 @@ justify-content: space-between;
 font-size: large;
 }
 .container{
-  margin-top: 0;
-  margin-bottom: 0;
+                                                                                             
 
 }
